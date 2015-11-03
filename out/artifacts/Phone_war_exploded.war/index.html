@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+    <script src="example.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-controller="PaginationDemoCtrl">
+<div class="container" >
+<form name="form" ng-submit="submit()" >
+	<label>input:<input type="text" ng-model ="input" name="phone" required></label>
+	<input type="submit" value="submit">
+	<span ng-show="error">The Value is not a phone number</span>
+</form>
+<br />
+<span>The total number is: {{result}}</span>
+    <div class="container">
+        <ul>
+            <li ng-repeat="item in filteredData">{{item}}</li>
+        </ul>
+    </div>
+    <uib-pagination total-items="totalItems" ng-model="currentPage" max-size="5" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages"></uib-pagination>
+    <p>Page: {{currentPage}} / {{numPages}}</p>
+</div>
+</body>
+</html>
