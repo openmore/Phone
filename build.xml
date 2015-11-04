@@ -13,11 +13,14 @@
     <property name = "build.dir" value = "${web.dir}/WEB-INF/classes"/>
     <property name = "name" value = "Phone"/>
 
-    <path id = "master-classpath">
-        <fileset dir = "${web.dir}/WEB-INF/lib">
-            <include name = "**/*.jar"/>
+    <path id="project.classpath">
+        <pathelement path="${web.dir}/WEB-INF/classes" />
+        <fileset dir="${web.dir}/WEB-INF/lib">
+            <include name="**/*.jar" />
         </fileset>
-        <pathelement path = "${build.dir}"/>
+        <fileset dir="${sdk.dir}/lib">
+            <include name="shared/**/*.jar" />
+        </fileset>
     </path>
 
     <target name="copyjars"
@@ -43,13 +46,13 @@
         <echo message = ""/>
     </target>
 
-    <target name = "build" description = "Compile main source tree java files">
+    <target name = "build" description = "Compile main source tree java files" depends="copyjars">
         <mkdir dir = "${build.dir}"/>
 
         <javac
                 srcdir="${src.dir}"
                 destdir="${web.dir}/WEB-INF/classes"
-                classpathref="master-classpath"
+                classpathref="project.classpath"
                 debug="on" />
     </target>
 
