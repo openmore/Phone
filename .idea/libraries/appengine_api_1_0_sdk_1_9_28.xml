@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="appengine-api-1.0-sdk-1.9.28">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-api-1.0-sdk-1.9.28.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-jsr107cache-1.9.28.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/datanucleus-core-1.1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/datanucleus-jpa-1.1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/jdo2-api-2.3-eb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/jsr107cache-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/libservice.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-api-labs-1.9.28.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-api-1.0-sdk-1.9.28.jar!/" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-api-labs-1.9.28.jar!/com/google/appengine/labs/repackaged/com/google/common/base/super" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-api-labs-1.9.28.jar!/com/google/appengine/labs/repackaged/com/google/common/collect/super" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-api-labs-1.9.28.jar!/com/google/appengine/labs/repackaged/com/google/common/math/super" />
+      <root url="jar://$PROJECT_DIR$/war/WEB-INF/lib/appengine-api-labs-1.9.28.jar!/com/google/appengine/labs/repackaged/com/google/common/primitives/super" />
+    </SOURCES>
+  </library>
+</component>
