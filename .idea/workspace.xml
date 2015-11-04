@@ -46,8 +46,8 @@
       <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6375">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.1875">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -792,7 +792,7 @@
       <option name="number" value="Default" />
       <updated>1446577949453</updated>
       <workItem from="1446577954478" duration="9152000" />
-      <workItem from="1446648092803" duration="7973000" />
+      <workItem from="1446648092803" duration="9231000" />
     </task>
     <task id="LOCAL-00001" summary="add build in Intellij">
       <created>1446663657554</created>
@@ -812,11 +812,17 @@
       <option name="project" value="LOCAL" />
       <updated>1446664434092</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add build in Intellij">
+      <created>1446673434411</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1446673434411</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17125000" />
+    <option name="totallyTimeSpent" value="18383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -992,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6375">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.1875">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding />
         </state>
       </provider>
