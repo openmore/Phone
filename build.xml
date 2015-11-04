@@ -1,9 +1,9 @@
 <?xml version = "1.0"?>
 
-<project name = "Phone" basedir = "." default = "usage">
+<project name = "Phone"  default = "usage">
 
     <!--change path if necessary-->
-    <property name="sdk.dir" location="/Users/yue/Documents/appengine-java-sdk-1.9.28" />
+    <property name="sdk.dir" location="./appengine-java-sdk-1.9.28" />
     <import file="${sdk.dir}/config/user/ant-macros.xml" />
 
 
