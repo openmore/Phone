@@ -1,0 +1,78 @@
+<?xml version = "1.0"?>
+
+<project name = "Phone" basedir = "." default = "usage">
+
+    <!--change path if necessary-->
+    <property name="sdk.dir" location="/Users/yue/Documents/appengine-java-sdk-1.9.28" />
+    <import file="${sdk.dir}/config/user/ant-macros.xml" />
+
+
+    <property name = "src.dir" value = "src"/>
+    <property name = "web.dir" value = "war"/>
+    <property name = "javadoc.dir" value = "doc"/>
+    <property name = "build.dir" value = "${web.dir}/WEB-INF/classes"/>
+    <property name = "name" value = "Phone"/>
+
+    <path id = "master-classpath">
+        <fileset dir = "${web.dir}/WEB-INF/lib">
+            <include name = "**/*.jar"/>
+        </fileset>
+        <pathelement path = "${build.dir}"/>
+    </path>
+
+    <target name="copyjars"
+            description="Copies the App Engine JARs to the WAR.">
+        <copy
+                todir="${web.dir}/WEB-INF/lib"
+                flatten="true">
+            <fileset dir="${sdk.dir}/lib/user">
+                <include name="**/*.jar" />
+            </fileset>
+        </copy>
+    </target>
+
+    <target name = "usage">
+        <echo message = ""/>
+        <echo message = "${name} build file"/>
+        <echo message = "-----------------------------------"/>
+        <echo message = ""/>
+        <echo message = "Available targets are:"/>
+        <echo message = ""/>
+        <echo message = "deploy    --> Deploy application as directory"/>
+        <echo message = "deploywar --> Deploy application as a WAR file"/>
+        <echo message = ""/>
+    </target>
+
+    <target name = "build" description = "Compile main source tree java files">
+        <mkdir dir = "${build.dir}"/>
+
+        <javac
+                srcdir="${src.dir}"
+                destdir="${web.dir}/WEB-INF/classes"
+                classpathref="master-classpath"
+                debug="on" />
+    </target>
+
+
+    <target name="runserver" depends="build"
+            description="Starts the development server.">
+        <dev_appserver war="war" />
+    </target>
+
+    <target name="update" depends="build"
+            description="Uploads the application to App Engine.">
+        <appcfg action="update" war="war" />
+    </target>
+
+    <target name="update_indexes" depends="build"
+            description="Uploads just the datastore index configuration to App Engine.">
+        <appcfg action="update_indexes" war="war" />
+    </target>
+
+    <target name="rollback" depends="build"
+            description="Rolls back an interrupted application update.">
+        <appcfg action="rollback" war="war" />
+    </target>
+
+
+</project>
