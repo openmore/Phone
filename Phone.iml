@@ -25,8 +25,7 @@
     <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="JBoss 6.1.0.Final" level="application_server_libraries" />
-    <orderEntry type="library" name="AppEngine API" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="AppEngine Dev 1.9.28" level="application_server_libraries" />
+    <orderEntry type="library" name="appengine-api-1.0-sdk-1.9.28" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">
