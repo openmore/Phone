@@ -77,7 +77,7 @@
         <appcfg action="rollback" war="war" />
     </target>
 
-    <target name="clean" depends="build">
+    <target name="clean after build" depends="build">
         <delete>
             <fileset dir="${web.dir}/WEB-INF/classes">
                 <include name="**/*.jar" />
