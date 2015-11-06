@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 
-public class ajaxKeyPad extends HttpServlet {
+public class ajaxKeyPad extends HttpServle {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
